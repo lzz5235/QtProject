@@ -1,0 +1,36 @@
+﻿生成启动时间为 2013/7/24 11:38:04。
+     1>项目“C:\Users\lzz\documents\visual studio 2010\Projects\weather\weather\weather.vcxproj”在节点 2 上(rebuild 个目标)。
+     1>_PrepareForClean:
+         正在删除文件“Debug\weather.lastbuildstate”。
+       InitializeBuildStatus:
+         正在创建“Debug\weather.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       CustomBuild:
+         Moc'ing weather.h...
+         Uic'ing weather.ui...
+         Rcc'ing weather.qrc...
+     1>RCC : warning : No resources in 'C:\Users\lzz\documents\visual studio 2010\Projects\weather\weather\weather.qrc'.
+         
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\4.8.5\include /I.\GeneratedFiles\Debug /IC:\Qt\4.8.5\include\QtCore /IC:\Qt\4.8.5\include\QtGui /IC:\Qt\4.8.5\include\QtNetwork /IC:\Qt\4.8.5\include\QtHelp /IC:\Qt\4.8.5\include\QtWebKit /IC:\Qt\4.8.5\include\phonon /IC:\Qt\4.8.5\include\QtXml /IC:\Qt\4.8.5\include\QtXmlPatterns /IC:\Qt\4.8.5\include\QtDeclarative /IC:\Qt\4.8.5\include\QtScriptTools /IC:\Qt\4.8.5\include\QtScript /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_NETWORK_LIB /D QT_WEBKIT_LIB /D QT_PHONON_LIB /D QT_XML_LIB /D QT_XMLPATTERNS_LIB /D QT_DECLARATIVE_LIB /D QT_SCRIPTTOOLS_LIB /D QT_SCRIPT_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GeneratedFiles\Debug\moc_weather.cpp main.cpp weather.cpp
+         moc_weather.cpp
+         main.cpp
+         weather.cpp
+         正在生成代码...
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\4.8.5\include /I.\GeneratedFiles\Debug /IC:\Qt\4.8.5\include\QtCore /IC:\Qt\4.8.5\include\QtGui /IC:\Qt\4.8.5\include\QtNetwork /IC:\Qt\4.8.5\include\QtHelp /IC:\Qt\4.8.5\include\QtWebKit /IC:\Qt\4.8.5\include\phonon /IC:\Qt\4.8.5\include\QtXml /IC:\Qt\4.8.5\include\QtXmlPatterns /IC:\Qt\4.8.5\include\QtDeclarative /IC:\Qt\4.8.5\include\QtScriptTools /IC:\Qt\4.8.5\include\QtScript /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_NETWORK_LIB /D QT_WEBKIT_LIB /D QT_PHONON_LIB /D QT_XML_LIB /D QT_XMLPATTERNS_LIB /D QT_DECLARATIVE_LIB /D QT_SCRIPTTOOLS_LIB /D QT_SCRIPT_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GeneratedFiles\qrc_weather.cpp
+         qrc_weather.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\lzz\documents\visual studio 2010\Projects\weather\Win32\Debug\\weather.exe" /NOLOGO /LIBPATH:C:\Qt\4.8.5\lib qtmaind.lib QtCored4.lib QtGuid4.lib QtNetworkd4.lib QtHelpd4.lib QtWebKitd4.lib phonond4.lib QtXmld4.lib QtXmlPatternsd4.lib QtDeclaratived4.lib QtScriptToolsd4.lib QtScriptd4.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\weather.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\lzz\documents\visual studio 2010\Projects\weather\Win32\Debug\weather.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\lzz\documents\visual studio 2010\Projects\weather\Win32\Debug\weather.lib" /MACHINE:X86 Debug\moc_weather.obj
+         Debug\qrc_weather.obj
+         Debug\main.obj
+         Debug\weather.obj
+         weather.vcxproj -> C:\Users\lzz\documents\visual studio 2010\Projects\weather\Win32\Debug\weather.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\lzz\documents\visual studio 2010\Projects\weather\Win32\Debug\\weather.exe;#1" /manifest Debug\weather.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug\weather.unsuccessfulbuild”。
+         正在对“Debug\weather.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“C:\Users\lzz\documents\visual studio 2010\Projects\weather\weather\weather.vcxproj”(rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:12.94
