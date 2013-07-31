@@ -44,10 +44,10 @@
     <ClCompile Include="GeneratedFiles\Debug\moc_weather.cpp">
       <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_weather.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
     <ClCompile Include="GeneratedFiles\qrc_weather.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_weather.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -10,6 +10,19 @@
 #include <QFile>
 #include <QMap>
 
+
+#include <QAction>
+#include <QMenuBar>
+#include <QLabel>
+#include <QPushButton>
+#include <QVBoxLayout>
+#include <QHBoxLayout>
+#include <QInputDialog>
+#include <QMessageBox>
+#include <QDate>
+#include <QTimer>
+
+
 class QVBoxLayout;
 class QHBoxLayout;
 class QTextEdit;

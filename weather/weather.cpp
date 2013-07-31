@@ -1,10 +1,14 @@
 ﻿#include "weather.h"
 
-#include <QtGui>
+#include <QApplication>
+#include <QTextCodec>
+#include <QTextStream>
 #include <QDomDocument>
 #include <QtScript/QScriptValue>
 #include <QtScript/QScriptEngine>
+#include <QSettings>
 
+#include <QDebug>
 
 CWeatherWidget::CWeatherWidget()
 {
@@ -45,6 +49,7 @@ void CWeatherWidget::InitPic()
 	m_map.insert("多云转阴","mostly_cloudy.gif");
 	m_map.insert("雨","rain.gif");
 	m_map.insert("阵雨","chance_of_storm.gif");
+	m_map.insert("雷阵雨转中雨","chance_of_tstorm.gif");
 }
 void CWeatherWidget::slotPublicNetworkLocal()
 {
@@ -281,7 +286,8 @@ void CWeatherWidget::slotWeatherInfo()
 	QString url = "http://m.weather.com.cn/data/";
 	url += code;
 	url +=".html";
-
+	
+	qDebug() << url;
 	//QString url = "http://m.weather.com.cn/data/404010100.html";
 
 	m_NetworkRequest.setUrl(QUrl(url));
@@ -310,6 +316,10 @@ void CWeatherWidget::slotReadyRead()
 	QScriptValue sc;
 	QScriptEngine engine;
 	sc = engine.evaluate("(" + json + ")"); //规定写法，具体没研究
+
+	QPixmap pixFail;
+	pixFail.load("./images/" + showPic(&	(sc.property("weatherinfo").property("weather1").toString() )	)	);
+	m_picLable->setPixmap(pixFail);
 
 	m_dateLable->setText(sc.property("weatherinfo").property("date_y").toString());//date
 	m_ctiyLabel->setText(sc.property("weatherinfo").property("city").toString()); //city
@@ -365,10 +375,6 @@ void CWeatherWidget::slotReadyRead()
 	info.append(tr("...以上是未来三天预报..."));
     m_threeWeatherLable->setText(info);
 
-	QPixmap pixFail;
-	pixFail.load("./images/" + showPic(&	(sc.property("weatherinfo").property("weather1").toString() )	)	);
-	m_picLable->setPixmap(pixFail);
-
 }
 
 void CWeatherWidget::slotNetworkIP()
@@ -384,6 +390,6 @@ void CWeatherWidget::slotBootStart()
 	if(rb == 0)
 	{
 		QSettings *reg=new QSettings("HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",QSettings::NativeFormat);   
-		reg->setValue("app",QApplication::applicationFilePath());
+		reg->setValue("app",QCoreApplication::applicationFilePath());
 	}
 }
