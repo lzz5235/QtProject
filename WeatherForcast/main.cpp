@@ -1,4 +1,3 @@
-#include <QApplication>
 #include <QTextCodec>
 #include "weather.h"
 

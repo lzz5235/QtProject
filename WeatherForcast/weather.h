@@ -4,13 +4,13 @@
 # pragma execution_character_set("utf-8")
 #endif
 
-
-
+#include<QtWebKit>
+#include <QApplication>
 #include <QtScript/QScriptValue>
 #include <QtScript/QScriptEngine>
 #include <QtNetwork>
 #include <QMainWindow>
-#include <QtWidgets>
+//#include <QtWidgets>
 #include <QWebElement>
 #include <QDomDocument>
 

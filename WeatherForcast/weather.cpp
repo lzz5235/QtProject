@@ -316,8 +316,8 @@ void CWeatherWidget::slotReadyRead()
 	sc = engine.evaluate("(" + json + ")"); //规定写法，具体没研究
 
 	QPixmap pixFail;
-	pixFail.load("./images/" + showPic(&	(sc.property("weatherinfo").property("weather1").toString() )	)	);
-	m_picLable->setPixmap(pixFail);
+    //pixFail.load("./images/" + showPic(&	(sc.property("weatherinfo").property("weather1").toString() )	)	);
+    //m_picLable->setPixmap(pixFail);
 
 	m_dateLable->setText(sc.property("weatherinfo").property("date_y").toString());//date
 	m_ctiyLabel->setText(sc.property("weatherinfo").property("city").toString()); //city

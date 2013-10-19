@@ -4,13 +4,11 @@
 #
 #-------------------------------------------------
 
-QT       += script
-QT       += widgets
-QT       += network xml
-QT       += webkit
-
-
-greaterThan(QT_MAJOR_VERSION, 4): QT +=
+QT      +=network \
+                webkit \
+                xml \
+                widgets \
+                script
 
 TARGET = WeatherForcast
 TEMPLATE = app
