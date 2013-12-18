@@ -1,4 +1,5 @@
-qtproject
+QtProject
 =========
 
-qt project design and realize
+这个工程是我学习Qt库的练手项目，一个是天气预报，另一个是日程管理系统。
+都比较简单，如果有志同道合兄弟，我们可以一起讨论交流！
